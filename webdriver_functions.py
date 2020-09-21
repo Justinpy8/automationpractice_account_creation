@@ -183,6 +183,12 @@ def address_alias(aliasaddress):
 def register_button():
     reg_button = driver.find_element_by_xpath("//button[@id='submitAccount']")
     reg_button.click()
+    time.sleep(10)
+
+    """Testing to see if the account creation is a success by finding the sign out button"""
+    logout_botton = driver.find_element_by_xpath("//a[@class='logout']")
+    assert logout_botton.is_displayed(), "Account creation failed"
+    print("Account creation is successful - the sign out button is displayed.")
 
 
 def closing_browser():

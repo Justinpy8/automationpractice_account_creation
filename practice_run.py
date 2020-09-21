@@ -5,7 +5,7 @@ from webdriver_functions import *
 # data:
 
 url = "http://automationpractice.com/"
-email = "jj@sweet.com"
+email = "jj@sweet1.com"
 title = "male"
 firstname = "Justin"
 lastname = "Rich"
@@ -43,3 +43,4 @@ home_phone(homephone)
 mobile_phone(mobilephone)
 address_alias(aliasaddress)
 register_button()
+closing_browser()
