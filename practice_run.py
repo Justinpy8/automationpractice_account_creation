@@ -15,13 +15,14 @@ firstname = "Justin"
 lastname = "Rich"
 password = "1ksdit56"
 date = "13"
-month = 'March'
+month = 'May'
 year = "1984"
-
-
+newsletter = "true"
 
 email_address_check(email)
 title_info(title)
 name_info(firstname, lastname)
 password_info(password)
 date_of_birth(date, month, year)
+special_offers()
+

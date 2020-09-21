@@ -5,7 +5,6 @@ from selenium.webdriver.support.select import Select
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-
 driver = webdriver.Chrome()
 driver.implicitly_wait(20)
 driver.maximize_window()
@@ -65,11 +64,19 @@ def name_info(firstname, lastname):
     """first name info"""
     first_name = driver.find_element_by_xpath("//input[@id='customer_firstname']")
     first_name.send_keys(firstname)
+
+    """last name info to the address section"""
+    address_first_name = driver.find_element_by_xpath("//input[@id='firstname']")
+    address_first_name.send_keys(firstname)
     print(f"Entering {firstname} as the first name.")
 
     """last name info"""
     last_name = driver.find_element_by_xpath("//input[@id='customer_lastname']")
     last_name.send_keys(lastname)
+
+    """"last name info to the address section"""
+    address_last_name = driver.find_element_by_xpath("//input[@id='lastname']")
+    address_last_name.send_keys(lastname)
     print(f"Entering {lastname} as the first name.")
 
 
@@ -80,7 +87,7 @@ def password_info(password):
     print(f"Entering {password} as the first name.")
 
 
-def date_of_birth(date, month, year,):
+def date_of_birth(date, month, year, ):
     """date info"""
     date_dropdown = driver.find_element_by_xpath("//select[@id='days']")
     date_selection = Select(date_dropdown)
@@ -91,7 +98,7 @@ def date_of_birth(date, month, year,):
     """month info"""
     month_dropdown = driver.find_element_by_xpath("//select[@id='months']")
     month_selection = Select(month_dropdown)
-    month_selection.select_by_visible_text(month)
+    month_selection.select_by_visible_text(f"{month} ")
     print(f"Selected {month} as the month")
     time.sleep(1)
 
@@ -101,6 +108,19 @@ def date_of_birth(date, month, year,):
     year_selection.select_by_value(year)
     print(f"Selected {year} as the month")
     time.sleep(1)
+
+
+def news_letter():
+    newsletter = driver.find_element_by_xpath("//input[@id='newsletter']")
+    newsletter.click()
+
+
+def special_offers():
+    offers = driver.find_element_by_xpath("//input[@id='optin']")
+    offers.click()
+
+
+
 
 
 
