@@ -64,19 +64,11 @@ def name_info(firstname, lastname):
     """first name info"""
     first_name = driver.find_element_by_xpath("//input[@id='customer_firstname']")
     first_name.send_keys(firstname)
-
-    """last name info to the address section"""
-    address_first_name = driver.find_element_by_xpath("//input[@id='firstname']")
-    address_first_name.send_keys(firstname)
     print(f"Entering {firstname} as the first name.")
 
     """last name info"""
     last_name = driver.find_element_by_xpath("//input[@id='customer_lastname']")
     last_name.send_keys(lastname)
-
-    """"last name info to the address section"""
-    address_last_name = driver.find_element_by_xpath("//input[@id='lastname']")
-    address_last_name.send_keys(lastname)
     print(f"Entering {lastname} as the first name.")
 
 
@@ -113,14 +105,85 @@ def date_of_birth(date, month, year, ):
 def news_letter():
     newsletter = driver.find_element_by_xpath("//input[@id='newsletter']")
     newsletter.click()
+    print(f"Sign up for our newsletter box is checked")
 
 
 def special_offers():
     offers = driver.find_element_by_xpath("//input[@id='optin']")
     offers.click()
+    print(f"Receive special offers from our partners box is checked")
 
 
+def company_name(companyname):
+    company = driver.find_element_by_xpath("//input[@id='company']")
+    company.send_keys(companyname)
+    print(f"Company name is: {companyname}")
 
 
+def address(address_line1, address_line2, city, state, zipcode, country):
+    """Entering the address info into the 1st address box:
+    ******Street address, P.O. Box, Company name, etc.******
+    """
+    address_box1 = driver.find_element_by_xpath("//input[@id='address1']")
+    address_box1.send_keys(address_line1)
+
+    """Entering the address info into the 2nd address box:
+    ******Apartment, suite, unit, building, floor, etc...******
+    """
+    address_box2 = driver.find_element_by_xpath("//input[@id='address2']")
+    address_box2.send_keys(address_line2)
+
+    """Entering the City info"""
+    city_name = driver.find_element_by_xpath("//input[@id='city']")
+    city_name.send_keys(city)
+
+    """Choosing the states from the dropdown list"""
+    states_list = driver.find_element_by_xpath("//select[@id='id_state']")
+    select_list = Select(states_list)
+    select_list.select_by_visible_text(state)
+    time.sleep(1)
+
+    """Entering the zip code"""
+    postalcode = driver.find_element_by_xpath("//input[@id='postcode']")
+    postalcode.send_keys(zipcode)
+
+    """Choose country from the dropdown list"""
+    country_list = driver.find_element_by_xpath("//select[@id='id_country']")
+    country_select = Select(country_list)
+    country_select.select_by_visible_text(country)
+
+    print("The following address info have been entered: ")
+    print(f"{address_line1}\n{address_line2}\n{city}\n{state}\n{zipcode}\n{country}")
 
 
+def additional_info(additionalinfo):
+    additional = driver.find_element_by_xpath("//textarea[@id='other']")
+    additional.send_keys(additionalinfo)
+    print(f"Entering {additionalinfo} into the Additional Information box")
+
+
+def home_phone(homephone):
+    homenum = driver.find_element_by_xpath("//input[@id='phone']")
+    homenum.send_keys(homephone)
+    print(f"{homephone} is being entered as home phone number")
+
+
+def mobile_phone(mobilephone):
+    mobilenum = driver.find_element_by_xpath("//input[@id='phone_mobile']")
+    mobilenum.send_keys(mobilephone)
+    print(f"{mobilephone} is being entered as home phone number")
+
+
+def address_alias(aliasaddress):
+    alias = driver.find_element_by_xpath("//input[@id='alias']")
+    alias.send_keys(aliasaddress)
+    print(f"{aliasaddress} is being entered as the alias address")
+
+
+def register_button():
+    reg_button = driver.find_element_by_xpath("//button[@id='submitAccount']")
+    reg_button.click()
+
+
+def closing_browser():
+    driver.close()
