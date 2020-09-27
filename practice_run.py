@@ -5,11 +5,11 @@ from webdriver_functions import *
 # data:
 
 url = "http://automationpractice.com/"
-email = "jj@sweet1.com"
+email = "jj@sweet2.com"
 title = "male"
 firstname = "Justin"
 lastname = "Rich"
-password = "1ksdit56"
+password = "t56"
 date = "13"
 month = 'May'
 year = "1984"

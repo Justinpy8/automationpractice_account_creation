@@ -3,11 +3,28 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.select import Select
 from selenium.common.exceptions import NoSuchElementException
-import time
+import time, datetime
 
 driver = webdriver.Chrome()
 driver.implicitly_wait(20)
 driver.maximize_window()
+
+
+def screen_shots(message=""):
+    """Define time format for the file name"""
+    system_time = datetime.datetime.fromtimestamp(time.time()).strftime('%Y%m%d_%H%M%S')
+
+    """Set the file location for the screenshot files"""
+    file_path = 'C:/Dev/automationpractice_homework/screenshots/'
+
+    """Create the file name for the screen shot file."""
+    file_name = f"{message}_error_{system_time}.png"
+
+    """Create the variable contains the file location and file name formatting"""
+    full_file_path = f"{file_path}{file_name}"
+
+    """Take the screen shot and save it to the predefined location"""
+    driver.save_screenshot(full_file_path)
 
 
 def launching_website(url):
@@ -32,21 +49,23 @@ def sign_in(username, password):
 
 def email_address_check(email):
     """Entering the account creation page"""
-    sign_in_button = driver.find_element_by_xpath("//a[@class='login']")
-    sign_in_button.click()
-    time.sleep(2)
-    """Entering the email address"""
-    email_address = driver.find_element_by_xpath("//input[@id='email_create']")
-    email_address.send_keys(email)
-    driver.find_element_by_xpath("//button[@id='SubmitCreate']").click()
-    time.sleep(2)
-    """Email address not available error"""
     try:
+        sign_in_button = driver.find_element_by_xpath("//a[@class='login']")
+        sign_in_button.click()
+        time.sleep(2)
+        """Entering the email address"""
+        email_address = driver.find_element_by_xpath("//input[@id='email_create']")
+        email_address.send_keys(email)
+        driver.find_element_by_xpath("//button[@id='SubmitCreate']").click()
+        time.sleep(2)
+        """Email address not available error"""
         email_unavailable_error = driver.find_element_by_xpath("//div[@id='create_account_error']")
         if email_unavailable_error.is_displayed():
             print("This email address already has an account")
-    except NoSuchElementException as error:
-        print(f"This email address is available for new account creation")
+            screen_shots("unavailable email address")
+            print("Screen shot of the error message has been saved")
+    except NoSuchElementException:
+        print("Unable to move to the next step")
 
 
 def title_info(title):
@@ -185,10 +204,16 @@ def register_button():
     reg_button.click()
     time.sleep(10)
 
-    """Testing to see if the account creation is a success by finding the sign out button"""
-    logout_botton = driver.find_element_by_xpath("//a[@class='logout']")
-    assert logout_botton.is_displayed(), "Account creation failed"
-    print("Account creation is successful - the sign out button is displayed.")
+    """Checking for error message after clicking on the register button """
+    error_msg = driver.find_element_by_xpath("//div[@class='alert alert-danger']")
+    if error_msg.is_displayed():
+        screen_shots('Registration')
+        print("Registration error message screen shot has been captured")
+    else:
+        """Testing to see if the account creation is a success by finding the sign out button"""
+        logout_botton = driver.find_element_by_xpath("//a[@class='logout']")
+        assert logout_botton.is_displayed(), "Account creation failed"
+        print("Account creation is successful - the sign out button is displayed.")
 
 
 def closing_browser():
