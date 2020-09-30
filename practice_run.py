@@ -1,7 +1,5 @@
 from webdriver_functions import *
 
-
-
 # data:
 
 url = "http://automationpractice.com/"
@@ -24,7 +22,6 @@ additionalinfo = "Not sure what to put in here"
 homephone = "123-123-7899"
 mobilephone = "258-369-8888"
 aliasaddress = "123 sweet st"
-
 
 # Executions:
 

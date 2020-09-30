@@ -1,9 +1,29 @@
+from src.utilities import *
 from src.all_imports import *
-from src.utilities import screen_shots
 
-driver = webdriver.Chrome()
-driver.maximize_window()
+chrome_options = webdriver.ChromeOptions()
+prefs = {"profile.default_content_setting_values.notifications": 2}
+chrome_options.add_experimental_option("prefs", prefs)
+driver = webdriver.Chrome(options=chrome_options)
 driver.implicitly_wait(20)
+driver.maximize_window()
+
+
+def screen_shots(message=""):
+    """Define time format for the file name"""
+    system_time = datetime.datetime.fromtimestamp(time.time()).strftime('%Y%m%d_%H%M%S')
+
+    """Set the file location for the screenshot files"""
+    file_path = 'C:/Dev/automationpractice_homework/screenshots/'
+
+    """Create the file name for the screen shot file."""
+    file_name = f"{message}_error_{system_time}.png"
+
+    """Create the variable contains the file location and file name formatting"""
+    full_file_path = f"{file_path}{file_name}"
+
+    """Take the screen shot and save it to the predefined location"""
+    driver.save_screenshot(full_file_path)
 
 
 def launching_website(url):
@@ -193,3 +213,7 @@ def register_button():
         logout_botton = driver.find_element_by_xpath("//a[@class='logout']")
         assert logout_botton.is_displayed(), "Account creation failed"
         print("Account creation is successful - the sign out button is displayed.")
+
+
+def closing_browser():
+    driver.close()

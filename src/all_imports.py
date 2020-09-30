@@ -1,4 +1,5 @@
 # System Imports
+
 import logging
 import time
 import datetime
@@ -16,6 +17,3 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import WebDriverException, NoSuchElementException
 from selenium.webdriver import ChromeOptions
-
-# others
-# import src.utilities as utils
