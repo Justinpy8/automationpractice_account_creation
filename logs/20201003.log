@@ -110,3 +110,215 @@ Not sure what to put in here
 2020-10-03 02:20:28,541 [INFO] driver: Current name: chrome
 2020-10-03 02:20:30,661 [INFO] driver: browser is closed
 2020-10-03 02:20:30,661 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 21:44:32,360 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 21:44:37,799 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 21:44:37,799 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 21:44:39,832 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 21:45:04,847 [ERROR] email_address_check: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='create_account_error']"}
+  (Session info: chrome=85.0.4183.121)
+
+2020-10-03 21:45:04,905 [INFO] title_info: Title has been selected
+2020-10-03 21:45:04,966 [INFO] name_info: Entering Justin as the first name.
+2020-10-03 21:45:05,017 [INFO] name_info: Entering Rich as the first name.
+2020-10-03 21:45:05,071 [INFO] password_info: Entering t561342 as the password.
+2020-10-03 21:45:05,132 [INFO] date_of_birth: Date selected: 13
+2020-10-03 21:45:26,240 [INFO] date_of_birth: Month Selected: May
+2020-10-03 21:45:27,290 [INFO] date_of_birth: Year selected: 1984
+2020-10-03 21:45:28,335 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-03 21:45:28,381 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-03 21:45:28,443 [INFO] company_name: Company name is: Lucky Brand
+2020-10-03 21:45:29,750 [INFO] address: The following address info have been entered: 
+2020-10-03 21:45:29,750 [INFO] address: 123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-03 21:45:29,816 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-03 21:45:29,878 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-03 21:45:29,933 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-03 21:45:29,985 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-03 21:46:01,725 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 21:46:01,728 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=my-account
+2020-10-03 21:46:01,731 [INFO] driver: Current title:  My account - My Store
+2020-10-03 21:46:01,732 [INFO] driver: Current win_handle:  CDwindow-B279246985F934A5A7D5E175F54A476A
+2020-10-03 21:46:01,732 [INFO] driver: Current name: chrome
+2020-10-03 21:46:03,833 [INFO] driver: browser is closed
+2020-10-03 21:46:03,833 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 22:43:56,098 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 22:44:01,479 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 22:44:01,479 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 22:44:02,929 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 22:44:07,810 [ERROR] email_address_check: This email address already has an account
+2020-10-03 22:44:08,128 [INFO] email_address_check: Screen shot of the error message has been saved
+2020-10-03 22:44:28,368 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 22:44:28,371 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+2020-10-03 22:44:28,374 [INFO] driver: Current title:  Login - My Store
+2020-10-03 22:44:28,375 [INFO] driver: Current win_handle:  CDwindow-5BE9B749F292ADBCE86D9E5951F9C6A6
+2020-10-03 22:44:28,375 [INFO] driver: Current name: chrome
+2020-10-03 22:44:30,469 [INFO] driver: browser is closed
+2020-10-03 22:44:30,469 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 22:47:32,699 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 22:47:37,825 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 22:47:37,825 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 22:47:39,947 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 22:48:05,046 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 22:48:05,049 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation
+2020-10-03 22:48:05,052 [INFO] driver: Current title:  Login - My Store
+2020-10-03 22:48:05,053 [INFO] driver: Current win_handle:  CDwindow-5376E281ABD38BD1A03A3E2918CB5AE7
+2020-10-03 22:48:05,053 [INFO] driver: Current name: chrome
+2020-10-03 22:48:07,137 [INFO] driver: browser is closed
+2020-10-03 22:48:07,137 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 22:49:39,273 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 22:49:44,389 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 22:49:44,389 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 22:49:46,223 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 22:50:11,291 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 22:50:11,295 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation
+2020-10-03 22:50:11,299 [INFO] driver: Current title:  Login - My Store
+2020-10-03 22:50:11,300 [INFO] driver: Current win_handle:  CDwindow-5B7823DC3BDD2E0C314BC8EC6068FAED
+2020-10-03 22:50:11,300 [INFO] driver: Current name: chrome
+2020-10-03 22:50:13,393 [INFO] driver: browser is closed
+2020-10-03 22:50:13,393 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 22:51:49,718 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 22:51:54,839 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 22:51:54,840 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 22:51:56,969 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 22:52:22,093 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 22:52:22,097 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation
+2020-10-03 22:52:22,100 [INFO] driver: Current title:  Login - My Store
+2020-10-03 22:52:22,101 [INFO] driver: Current win_handle:  CDwindow-CC214912A4ACFAF9B54F0C6F6F3B7BBB
+2020-10-03 22:52:22,101 [INFO] driver: Current name: chrome
+2020-10-03 22:52:24,191 [INFO] driver: browser is closed
+2020-10-03 22:52:24,191 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 23:05:58,774 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 23:06:03,894 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 23:06:03,894 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 23:06:06,063 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 23:06:31,344 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 23:06:31,348 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation
+2020-10-03 23:06:31,351 [INFO] driver: Current title:  Login - My Store
+2020-10-03 23:06:31,351 [INFO] driver: Current win_handle:  CDwindow-E117B4BF72AD448ABCE2660C7686E2BE
+2020-10-03 23:06:31,351 [INFO] driver: Current name: chrome
+2020-10-03 23:06:33,437 [INFO] driver: browser is closed
+2020-10-03 23:06:33,437 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 23:09:44,565 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 23:09:49,693 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 23:09:49,693 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 23:09:51,597 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 23:09:56,493 [INFO] email_address_check: jj@sweet1259.com is being entered as User Name
+2020-10-03 23:10:16,681 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 23:10:16,684 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation
+2020-10-03 23:10:16,688 [INFO] driver: Current title:  Login - My Store
+2020-10-03 23:10:16,688 [INFO] driver: Current win_handle:  CDwindow-2CA02856986CD1805F16C98BF0A9F3CA
+2020-10-03 23:10:16,688 [INFO] driver: Current name: chrome
+2020-10-03 23:10:18,781 [INFO] driver: browser is closed
+2020-10-03 23:10:18,781 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 23:12:02,763 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 23:12:07,877 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 23:12:07,878 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 23:12:09,253 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 23:12:14,155 [INFO] email_address_check: jj@sweet1259.com is being entered as User Name
+2020-10-03 23:12:14,210 [INFO] title_info: Title has been selected
+2020-10-03 23:12:14,269 [INFO] name_info: Entering Justin as the first name.
+2020-10-03 23:12:14,320 [INFO] name_info: Entering Rich as the first name.
+2020-10-03 23:12:14,374 [INFO] password_info: Entering t561342 as the password.
+2020-10-03 23:12:14,430 [INFO] date_of_birth: Date selected: 13
+2020-10-03 23:12:35,523 [INFO] date_of_birth: Month Selected: May
+2020-10-03 23:12:36,575 [INFO] date_of_birth: Year selected: 1984
+2020-10-03 23:12:37,617 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-03 23:12:37,660 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-03 23:12:37,725 [INFO] company_name: Company name is: Lucky Brand
+2020-10-03 23:12:39,031 [INFO] address: The following address info have been entered: 
+2020-10-03 23:12:39,031 [INFO] address: 
+123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-03 23:12:39,100 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-03 23:12:39,169 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-03 23:12:39,227 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-03 23:12:39,281 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-03 23:13:06,570 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 23:13:06,573 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=my-account
+2020-10-03 23:13:06,577 [INFO] driver: Current title:  My account - My Store
+2020-10-03 23:13:06,577 [INFO] driver: Current win_handle:  CDwindow-128DD76AC8563BE86D35676AFB217D42
+2020-10-03 23:13:06,578 [INFO] driver: Current name: chrome
+2020-10-03 23:13:08,667 [INFO] driver: browser is closed
+2020-10-03 23:13:08,667 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 23:15:43,676 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 23:15:48,799 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 23:15:48,799 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 23:15:50,584 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 23:15:55,824 [INFO] email_address_check: jj@sweet129.com is being entered as User Name
+2020-10-03 23:15:55,881 [INFO] title_info: Title has been selected
+2020-10-03 23:15:55,941 [INFO] name_info: Entering Justin as the first name.
+2020-10-03 23:15:55,990 [INFO] name_info: Entering Rich as the first name.
+2020-10-03 23:15:56,042 [INFO] password_info: Entering t561342 as the password.
+2020-10-03 23:15:56,104 [INFO] date_of_birth: Date selected: 13
+2020-10-03 23:16:17,215 [INFO] date_of_birth: Month Selected: May
+2020-10-03 23:16:18,267 [INFO] date_of_birth: Year selected: 1984
+2020-10-03 23:16:19,311 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-03 23:16:19,354 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-03 23:16:19,417 [INFO] company_name: Company name is: Lucky Brand
+2020-10-03 23:16:20,725 [INFO] address: The following address info have been entered: 
+2020-10-03 23:16:20,725 [INFO] address: 
+123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-03 23:16:20,792 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-03 23:16:20,858 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-03 23:16:20,913 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-03 23:16:20,968 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-03 23:16:26,945 [INFO] register_button: Registering the account.........
+2020-10-03 23:16:26,946 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 23:16:26,949 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=my-account
+2020-10-03 23:16:26,952 [INFO] driver: Current title:  My account - My Store
+2020-10-03 23:16:26,952 [INFO] driver: Current win_handle:  CDwindow-70EB5FAF04303B2AD57D4ECA82637493
+2020-10-03 23:16:26,952 [INFO] driver: Current name: chrome
+2020-10-03 23:16:29,043 [INFO] driver: browser is closed
+2020-10-03 23:16:29,043 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 23:19:59,387 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 23:20:04,522 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 23:20:04,522 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-03 23:20:07,059 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 23:20:12,793 [INFO] email_address_check: jj@sweet19.com is being entered as User Name
+2020-10-03 23:20:12,843 [INFO] title_info: Title has been selected
+2020-10-03 23:20:12,904 [INFO] name_info: Entering Justin as the first name.
+2020-10-03 23:20:12,956 [INFO] name_info: Entering Hello as the first name.
+2020-10-03 23:20:13,008 [INFO] password_info: Entering t561342 as the password.
+2020-10-03 23:20:13,111 [INFO] date_of_birth: Date selected: 3
+2020-10-03 23:20:34,232 [INFO] date_of_birth: Month Selected: June
+2020-10-03 23:20:35,288 [INFO] date_of_birth: Year selected: 1988
+2020-10-03 23:20:36,333 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-03 23:20:36,376 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-03 23:20:36,440 [INFO] company_name: Company name is: Lucky Brand
+2020-10-03 23:20:37,754 [INFO] address: The following address info have been entered: 
+2020-10-03 23:20:37,754 [INFO] address: 
+123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-03 23:20:37,819 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-03 23:20:37,879 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-03 23:20:37,933 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-03 23:20:37,995 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-03 23:20:43,941 [INFO] register_button: Registering the account.........
+2020-10-03 23:20:43,942 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 23:20:43,945 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=my-account
+2020-10-03 23:20:43,949 [INFO] driver: Current title:  My account - My Store
+2020-10-03 23:20:43,949 [INFO] driver: Current win_handle:  CDwindow-5F7E700E4E6D7A9E65B1E7AE9E1E36E9
+2020-10-03 23:20:43,949 [INFO] driver: Current name: chrome
+2020-10-03 23:20:46,034 [INFO] driver: browser is closed
+2020-10-03 23:20:46,034 [INFO] driver: ********  TEARDOWN completed *************

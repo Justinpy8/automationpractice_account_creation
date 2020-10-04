@@ -34,23 +34,21 @@ class AccountCreationPage(BasePage):
 
     def email_address_check(self, email):
         """Entering the account creation page"""
-        try:
-            sign_in_button = self.driver.find_element_by_xpath("//a[@class='login']")
-            sign_in_button.click()
-            time.sleep(2)
-            """Entering the email address"""
-            email_address = self.driver.find_element_by_xpath("//input[@id='email_create']")
-            email_address.send_keys(email)
-            self.driver.find_element_by_xpath("//button[@id='SubmitCreate']").click()
-            time.sleep(2)
-            """Email address not available error"""
-            email_unavailable_error = self.driver.find_element_by_xpath("//div[@id='create_account_error']")
-            if email_unavailable_error.is_displayed():
-                logs.error("This email address already has an account")
-                self.screen_shots("unavailable email address")
-                logs.info("Screen shot of the error message has been saved")
-        except NoSuchElementException as err:
-            logs.error(err)
+        sign_in_button = self.driver.find_element_by_xpath("//a[@class='login']")
+        sign_in_button.click()
+        time.sleep(2)
+        """Entering the email address"""
+        email_address = self.driver.find_element_by_xpath("//input[@id='email_create']")
+        email_address.send_keys(email)
+        self.driver.find_element_by_xpath("//button[@id='SubmitCreate']").click()
+        time.sleep(2)
+        logs.info(f"{email} is being entered as User Name")
+        # """Email address not available error"""
+        # email_unavailable_error = self.driver.find_element_by_xpath("//div[@id='create_account_error']")
+        # if email_unavailable_error.is_displayed():
+        #     logs.error("This email address already has an account")
+        #     self.screen_shots("unavailable email address")
+        #     logs.info("Screen shot of the error message has been saved")
 
     def title_info(self, title):
         """Title"""
@@ -58,7 +56,7 @@ class AccountCreationPage(BasePage):
         female = self.driver.find_element_by_xpath("//input[@id='id_gender2']")
         if title == "male":
             male.click()
-        if title == "female":
+        elif title == "female":
             female.click()
         logs.info("Title has been selected")
 
@@ -150,7 +148,7 @@ class AccountCreationPage(BasePage):
         country_select.select_by_visible_text(country)
 
         logs.info("The following address info have been entered: ")
-        logs.info(f"{address_line1}\n{address_line2}\n{city}\n{state}\n{zipcode}\n{country}")
+        logs.info(f"\n{address_line1}\n{address_line2}\n{city}\n{state}\n{zipcode}\n{country}")
 
     def additional_info(self, additionalinfo):
         additional = self.driver.find_element_by_xpath("//textarea[@id='other']")
@@ -175,15 +173,21 @@ class AccountCreationPage(BasePage):
     def register_button(self):
         reg_button = self.driver.find_element_by_xpath("//button[@id='submitAccount']")
         reg_button.click()
-        time.sleep(10)
+        time.sleep(5)
+        logs.info("Registering the account.........")
 
+    def account_confirmation(self):
         """Checking for error message after clicking on the register button """
-        error_msg = self.driver.find_element_by_xpath("//div[@class='alert alert-danger']")
-        if error_msg.is_displayed():
-            self.screen_shots('Registration')
-            logs.warning("Registration error message screen shot has been captured")
-        else:
+        try:
             """Testing to see if the account creation is a success by finding the sign out button"""
-            logout_botton = self.driver.find_element_by_xpath("//a[@class='logout']")
-            assert logout_botton.is_displayed(), logs.error("Account creation failed")
-            logs.info("Account creation is successful - the sign out button is displayed.")
+            logout_button = self.driver.find_element_by_xpath("//a[@class='logout']")
+            if logout_button.is_displayed():
+                logs.info("Account creation is successful - the sign out button is displayed.")
+            else:
+                error_msg = self.driver.find_element_by_xpath("//div[@class='alert alert-danger']")
+                error_msg.is_displayed()
+                self.screen_shots('Registration')
+                logs.error("Registration error message screen shot has been captured")
+
+        except NoSuchElementException as err:
+            logs.warning(err)
