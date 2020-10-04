@@ -1,12 +1,37 @@
-from src.utilities import *
-from src.all_imports import *
+# from src.utilities import *
 
-chrome_options = webdriver.ChromeOptions()
-prefs = {"profile.default_content_setting_values.notifications": 2}
-chrome_options.add_experimental_option("prefs", prefs)
-driver = webdriver.Chrome(options=chrome_options)
-driver.implicitly_wait(20)
-driver.maximize_window()
+
+from src.all_imports import *
+from selenium import webdriver
+
+
+
+logs = utils.create_logger()
+
+
+
+data = utils.load_yaml("C:/Dev/automationpractice_homework/data/parameter.yml")
+
+url = data["url"]
+email = data["email"]
+title = data["title"]
+firstname = data["firstname"]
+lastname = data["lastname"]
+password = data["password"]
+date = data["date"]
+month = data["month"]
+year = data["year"]
+companyname = data["companyname"]
+address_line1 = data["address_line1"]
+address_line2 = data["address_line2"]
+city = data["city"]
+state = data["state"]
+zipcode = data["zipcode"]
+country = data["country"]
+additionalinfo = data["additionalinfo"]
+homephone = data["homephone"]
+mobilephone = data["mobilephone"]
+aliasaddress = data["aliasaddress"]
 
 
 def screen_shots(message=""):
@@ -28,7 +53,7 @@ def screen_shots(message=""):
 
 def launching_website(url):
     driver.get(url)
-    print(f"{url} is loading")
+    logs.info(f"{url} is loading")
 
 
 def sign_in(username, password):
@@ -60,11 +85,11 @@ def email_address_check(email):
         """Email address not available error"""
         email_unavailable_error = driver.find_element_by_xpath("//div[@id='create_account_error']")
         if email_unavailable_error.is_displayed():
-            print("This email address already has an account")
+            logs.error("This email address already has an account")
             screen_shots("unavailable email address")
-            print("Screen shot of the error message has been saved")
-    except NoSuchElementException:
-        print("Unable to move to the next step")
+            logs.info("Screen shot of the error message has been saved")
+    except NoSuchElementException as err:
+        logs.error(err)
 
 
 def title_info(title):
@@ -75,26 +100,26 @@ def title_info(title):
         male.click()
     if title == "female":
         female.click()
-    print("Title has been selected")
+    logs.info("Title has been selected")
 
 
 def name_info(firstname, lastname):
     """first name info"""
     first_name = driver.find_element_by_xpath("//input[@id='customer_firstname']")
     first_name.send_keys(firstname)
-    print(f"Entering {firstname} as the first name.")
+    logs.info(f"Entering {firstname} as the first name.")
 
     """last name info"""
     last_name = driver.find_element_by_xpath("//input[@id='customer_lastname']")
     last_name.send_keys(lastname)
-    print(f"Entering {lastname} as the first name.")
+    logs.info(f"Entering {lastname} as the first name.")
 
 
 def password_info(password):
     """password info"""
     pass_word = driver.find_element_by_xpath("//input[@id='passwd']")
     pass_word.send_keys(password)
-    print(f"Entering {password} as the first name.")
+    logs.info(f"Entering {password} as the password.")
 
 
 def date_of_birth(date, month, year, ):
@@ -102,40 +127,40 @@ def date_of_birth(date, month, year, ):
     date_dropdown = driver.find_element_by_xpath("//select[@id='days']")
     date_selection = Select(date_dropdown)
     date_selection.select_by_value(date)
-    print(f"Selected {date} as the date")
+    logs.info(f"Date selected: {date}")
     time.sleep(1)
 
     """month info"""
     month_dropdown = driver.find_element_by_xpath("//select[@id='months']")
     month_selection = Select(month_dropdown)
     month_selection.select_by_visible_text(f"{month} ")
-    print(f"Selected {month} as the month")
+    logs.info(f"Month Selected: {month}")
     time.sleep(1)
 
     """year info"""
     year_dropdown = driver.find_element_by_xpath("//select[@id='years']")
     year_selection = Select(year_dropdown)
     year_selection.select_by_value(year)
-    print(f"Selected {year} as the month")
+    logs.info(f"Year selected: {year}")
     time.sleep(1)
 
 
 def news_letter():
     newsletter = driver.find_element_by_xpath("//input[@id='newsletter']")
     newsletter.click()
-    print(f"Sign up for our newsletter box is checked")
+    logs.info(f"Sign up for our newsletter box is checked")
 
 
 def special_offers():
     offers = driver.find_element_by_xpath("//input[@id='optin']")
     offers.click()
-    print(f"Receive special offers from our partners box is checked")
+    logs.info(f"Receive special offers from our partners box is checked")
 
 
 def company_name(companyname):
     company = driver.find_element_by_xpath("//input[@id='company']")
     company.send_keys(companyname)
-    print(f"Company name is: {companyname}")
+    logs.info(f"Company name is: {companyname}")
 
 
 def address(address_line1, address_line2, city, state, zipcode, country):
@@ -170,32 +195,32 @@ def address(address_line1, address_line2, city, state, zipcode, country):
     country_select = Select(country_list)
     country_select.select_by_visible_text(country)
 
-    print("The following address info have been entered: ")
-    print(f"{address_line1}\n{address_line2}\n{city}\n{state}\n{zipcode}\n{country}")
+    logs.info("The following address info have been entered: ")
+    logs.info(f"{address_line1}\n{address_line2}\n{city}\n{state}\n{zipcode}\n{country}")
 
 
 def additional_info(additionalinfo):
     additional = driver.find_element_by_xpath("//textarea[@id='other']")
     additional.send_keys(additionalinfo)
-    print(f"Entering {additionalinfo} into the Additional Information box")
+    logs.info(f"The following additional info has been appended:\n{additionalinfo}")
 
 
 def home_phone(homephone):
     homenum = driver.find_element_by_xpath("//input[@id='phone']")
     homenum.send_keys(homephone)
-    print(f"{homephone} is being entered as home phone number")
+    logs.info(f"Home phone number is: {homephone} ")
 
 
 def mobile_phone(mobilephone):
     mobilenum = driver.find_element_by_xpath("//input[@id='phone_mobile']")
     mobilenum.send_keys(mobilephone)
-    print(f"{mobilephone} is being entered as home phone number")
+    logs.info(f"Mobile phone number is: {mobilephone}")
 
 
 def address_alias(aliasaddress):
     alias = driver.find_element_by_xpath("//input[@id='alias']")
     alias.send_keys(aliasaddress)
-    print(f"{aliasaddress} is being entered as the alias address")
+    logs.info(f"{aliasaddress} is being entered as the alias address")
 
 
 def register_button():
@@ -207,13 +232,13 @@ def register_button():
     error_msg = driver.find_element_by_xpath("//div[@class='alert alert-danger']")
     if error_msg.is_displayed():
         screen_shots('Registration')
-        print("Registration error message screen shot has been captured")
+        logs.warning("Registration error message screen shot has been captured")
     else:
         """Testing to see if the account creation is a success by finding the sign out button"""
         logout_botton = driver.find_element_by_xpath("//a[@class='logout']")
-        assert logout_botton.is_displayed(), "Account creation failed"
-        print("Account creation is successful - the sign out button is displayed.")
+        assert logout_botton.is_displayed(), logs.error("Account creation failed")
+        logs.info("Account creation is successful - the sign out button is displayed.")
 
 
-def closing_browser():
-    driver.close()
+# def closing_browser():
+#     driver.close()
