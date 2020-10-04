@@ -1,0 +1,112 @@
+2020-10-03 00:05:42,611 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 00:05:45,672 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-03 00:05:47,926 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 00:06:53,319 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 00:06:56,421 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-03 00:06:56,546 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 00:06:56,546 [INFO] driver: Current URL: data:,
+2020-10-03 00:06:56,561 [INFO] driver: Current Title: 
+2020-10-03 00:06:56,561 [INFO] driver: Current Win_Handle: CDwindow-9A0EBF7D9B80858746DAA89F169F2131
+2020-10-03 00:06:56,561 [INFO] driver: Current Name: chrome
+2020-10-03 00:06:58,653 [INFO] driver: Closing the browser
+2020-10-03 00:06:58,653 [INFO] driver: *****************TEARDOWN IS COMPLETED***********************
+2020-10-03 00:07:38,636 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 00:07:43,594 [ERROR] email_address_check: This email address already has an account
+2020-10-03 00:07:43,910 [INFO] email_address_check: Screen shot of the error message has been saved
+2020-10-03 00:08:41,075 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-03 00:09:07,158 [ERROR] email_address_check: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='create_account_error']"}
+  (Session info: chrome=85.0.4183.121)
+
+2020-10-03 00:09:07,221 [INFO] title_info: Title has been selected
+2020-10-03 00:09:07,283 [INFO] name_info: Entering Justin as the first name.
+2020-10-03 00:09:07,332 [INFO] name_info: Entering Rich as the first name.
+2020-10-03 00:09:07,382 [INFO] password_info: Entering t561342 as the first name.
+2020-10-03 00:09:07,439 [INFO] date_of_birth: Date selected: 13
+2020-10-03 00:09:28,515 [INFO] date_of_birth: Month Selected: May
+2020-10-03 00:09:29,570 [INFO] date_of_birth: Year selected: 1984
+2020-10-03 00:09:30,620 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-03 00:09:30,666 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-03 00:09:30,728 [INFO] company_name: Company name is: Lucky Brand
+2020-10-03 00:09:32,040 [INFO] address: The following address info have been entered: 
+2020-10-03 00:09:32,040 [INFO] address: 123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-03 00:09:32,105 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-03 00:09:32,164 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-03 00:09:32,217 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-03 00:09:32,270 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-03 01:45:55,480 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 01:45:58,578 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-03 01:45:58,578 [INFO] test_login_case1: Starting the login case 1 test
+2020-10-03 01:46:22,713 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 01:46:22,713 [INFO] driver: Current URL: http://automationpractice.com/index.php
+2020-10-03 01:46:22,713 [INFO] driver: Current Title: My Store
+2020-10-03 01:46:22,713 [INFO] driver: Current Win_Handle: CDwindow-27272DEA297316CDD543F9721506EE49
+2020-10-03 01:46:22,713 [INFO] driver: Current Name: chrome
+2020-10-03 01:46:24,807 [INFO] driver: Closing the browser
+2020-10-03 01:46:24,807 [INFO] driver: *****************TEARDOWN IS COMPLETED***********************
+2020-10-03 01:51:10,215 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 01:52:58,378 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 01:53:01,461 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-03 01:53:01,461 [INFO] test_login_case1: Starting the login case 1 test
+2020-10-03 01:53:05,669 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 01:53:05,669 [INFO] driver: Current URL: http://automationpractice.com/index.php
+2020-10-03 01:53:05,669 [INFO] driver: Current Title: My Store
+2020-10-03 01:53:05,669 [INFO] driver: Current Win_Handle: CDwindow-53221F4ECB5E0281037A9F245911DFFA
+2020-10-03 01:53:05,669 [INFO] driver: Current Name: chrome
+2020-10-03 01:53:07,767 [INFO] driver: Closing the browser
+2020-10-03 01:53:07,767 [INFO] driver: *****************TEARDOWN IS COMPLETED***********************
+2020-10-03 01:54:36,365 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 01:54:39,443 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-03 01:54:39,443 [INFO] test_login_case1: Starting the login case 1 test
+2020-10-03 01:54:43,472 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 01:54:43,488 [INFO] driver: Current URL: http://automationpractice.com/index.php
+2020-10-03 01:54:43,488 [INFO] driver: Current Title: My Store
+2020-10-03 01:54:43,488 [INFO] driver: Current Win_Handle: CDwindow-F4CB59CA58D41E1F859C33C0240491A8
+2020-10-03 01:54:43,488 [INFO] driver: Current Name: chrome
+2020-10-03 01:54:45,608 [INFO] driver: Closing the browser
+2020-10-03 01:54:45,608 [INFO] driver: *****************TEARDOWN IS COMPLETED***********************
+2020-10-03 01:56:56,682 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 01:56:59,765 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-03 01:56:59,765 [INFO] test_login_case1: Starting the login case 1 test
+2020-10-03 01:57:24,058 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 01:57:24,058 [INFO] driver: Current URL: http://automationpractice.com/index.php
+2020-10-03 01:57:24,058 [INFO] driver: Current Title: My Store
+2020-10-03 01:57:24,058 [INFO] driver: Current Win_Handle: CDwindow-29D2FFDE4BA1E959C20258EB9A878CBE
+2020-10-03 01:57:24,058 [INFO] driver: Current Name: chrome
+2020-10-03 01:57:26,167 [INFO] driver: Closing the browser
+2020-10-03 01:57:26,167 [INFO] driver: *****************TEARDOWN IS COMPLETED***********************
+2020-10-03 02:09:04,009 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 02:09:09,227 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 02:09:09,228 [INFO] test_login_case1: Starting the login case 1 test
+2020-10-03 02:09:33,654 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 02:09:33,654 [INFO] driver: Current url: http://automationpractice.com/index.php
+2020-10-03 02:09:33,654 [INFO] driver: Current title:  My Store
+2020-10-03 02:09:33,654 [INFO] driver: Current win_handle:  CDwindow-B1EDD238F9D38BB07D5C9F130EE1AE57
+2020-10-03 02:09:33,654 [INFO] driver: Current name: chrome
+2020-10-03 02:09:35,768 [INFO] driver: browser is closed
+2020-10-03 02:09:35,768 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 02:18:40,734 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 02:18:45,968 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 02:18:45,968 [INFO] test_login_case1: Starting the login case 1 test
+2020-10-03 02:18:52,520 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 02:18:52,526 [INFO] driver: Current url: http://automationpractice.com/index.php
+2020-10-03 02:18:52,529 [INFO] driver: Current title:  My Store
+2020-10-03 02:18:52,530 [INFO] driver: Current win_handle:  CDwindow-725168B03BAAC3CC8B44F6BAFECF32EF
+2020-10-03 02:18:52,530 [INFO] driver: Current name: chrome
+2020-10-03 02:18:54,637 [INFO] driver: browser is closed
+2020-10-03 02:18:54,637 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-03 02:20:14,040 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-03 02:20:19,283 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-03 02:20:19,283 [INFO] test_login_case1: Starting the login case 1 test
+2020-10-03 02:20:28,534 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-03 02:20:28,538 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication
+2020-10-03 02:20:28,541 [INFO] driver: Current title:  Login - My Store
+2020-10-03 02:20:28,541 [INFO] driver: Current win_handle:  CDwindow-18166ED94F6C5C1D3D2B817E804E6BEF
+2020-10-03 02:20:28,541 [INFO] driver: Current name: chrome
+2020-10-03 02:20:30,661 [INFO] driver: browser is closed
+2020-10-03 02:20:30,661 [INFO] driver: ********  TEARDOWN completed *************

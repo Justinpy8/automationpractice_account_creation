@@ -1,0 +1,111 @@
+2020-10-02 22:13:51,153 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-02 22:13:56,271 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-02 22:17:05,902 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-02 22:17:11,032 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-02 22:17:11,182 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-02 22:17:11,185 [INFO] driver: Current URL: data:,
+2020-10-02 22:17:11,189 [INFO] driver: Current Title: 
+2020-10-02 22:17:11,190 [INFO] driver: Current Win_Handle: CDwindow-F015ECD58DF3B3BFD4526274DAC239D4
+2020-10-02 22:17:11,190 [INFO] driver: Current Name: chrome
+2020-10-02 22:17:13,267 [INFO] driver: Closing the browser
+2020-10-02 22:17:13,267 [INFO] driver: *****************TEARDOWN IS COMPLETED***********************
+2020-10-02 22:19:19,389 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-02 22:19:19,389 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-02 22:20:22,774 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+-----------------------------------------------------------------------------------------------------------------------------2020-10-02 23:08:19,805 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-02 23:08:19,805 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-02 23:08:22,707 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-02 23:08:48,079 [ERROR] email_address_check: Unable to move to the next step
+2020-10-02 23:08:48,139 [INFO] title_info: Title has been selected
+2020-10-02 23:08:48,199 [INFO] name_info: Entering Justin as the first name.
+2020-10-02 23:08:48,250 [INFO] name_info: Entering Rich as the first name.
+2020-10-02 23:08:48,302 [INFO] password_info: Entering t561342 as the first name.
+2020-10-02 23:08:48,362 [INFO] date_of_birth: Date selected: 13
+2020-10-02 23:09:09,471 [INFO] date_of_birth: Month Selected: May
+2020-10-02 23:09:10,531 [INFO] date_of_birth: Year selected: 1984
+2020-10-02 23:09:11,579 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-02 23:09:11,620 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-02 23:09:11,680 [INFO] company_name: Company name is: Lucky Brand
+2020-10-02 23:09:12,992 [INFO] address: The following address info have been entered: 
+2020-10-02 23:09:12,992 [INFO] address: 123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-02 23:09:13,056 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-02 23:09:13,116 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-02 23:09:13,169 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-02 23:09:13,226 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-02 23:09:44,382 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-02 23:41:24,510 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-02 23:41:29,737 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-02 23:41:32,074 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-02 23:41:37,001 [ERROR] email_address_check: This email address already has an account
+2020-10-02 23:41:37,267 [INFO] email_address_check: Screen shot of the error message has been saved
+2020-10-02 23:41:37,486 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-02 23:41:37,486 [INFO] driver: Current URL: data:,
+2020-10-02 23:41:37,502 [INFO] driver: Current Title: 
+2020-10-02 23:41:37,502 [INFO] driver: Current Win_Handle: CDwindow-AC59BBDE05AA446C69BB2E64FBBEEBE1
+2020-10-02 23:41:37,502 [INFO] driver: Current Name: chrome
+2020-10-02 23:41:39,612 [INFO] driver: Closing the browser
+2020-10-02 23:41:39,612 [INFO] driver: *****************TEARDOWN IS COMPLETED***********************
+2020-10-02 23:50:21,354 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-02 23:50:21,354 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-02 23:50:23,523 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-02 23:50:28,510 [ERROR] email_address_check: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='create_account_error']"}
+  (Session info: chrome=85.0.4183.121)
+
+2020-10-02 23:50:28,565 [INFO] title_info: Title has been selected
+2020-10-02 23:50:28,625 [INFO] name_info: Entering Justin as the first name.
+2020-10-02 23:50:28,674 [INFO] name_info: Entering Rich as the first name.
+2020-10-02 23:50:28,727 [INFO] password_info: Entering t561342 as the first name.
+2020-10-02 23:50:28,784 [INFO] date_of_birth: Date selected: 13
+2020-10-02 23:50:29,867 [INFO] date_of_birth: Month Selected: May
+2020-10-02 23:50:30,923 [INFO] date_of_birth: Year selected: 1984
+2020-10-02 23:50:31,973 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-02 23:50:32,016 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-02 23:50:32,078 [INFO] company_name: Company name is: Lucky Brand
+2020-10-02 23:50:33,390 [INFO] address: The following address info have been entered: 
+2020-10-02 23:50:33,390 [INFO] address: 123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-02 23:50:33,454 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-02 23:50:33,516 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-02 23:50:33,576 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-02 23:50:33,630 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-02 23:50:45,641 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-02 23:53:30,992 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-02 23:53:30,992 [INFO] driver: *******************Fixture setup is completed*******************
+2020-10-02 23:53:32,761 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-02 23:53:37,654 [ERROR] email_address_check: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='create_account_error']"}
+  (Session info: chrome=85.0.4183.121)
+
+2020-10-02 23:53:37,756 [INFO] title_info: Title has been selected
+2020-10-02 23:53:37,822 [INFO] name_info: Entering Justin as the first name.
+2020-10-02 23:53:37,875 [INFO] name_info: Entering Rich as the first name.
+2020-10-02 23:53:37,929 [INFO] password_info: Entering t561342 as the first name.
+2020-10-02 23:53:37,988 [INFO] date_of_birth: Date selected: 13
+2020-10-02 23:53:39,060 [INFO] date_of_birth: Month Selected: May
+2020-10-02 23:53:40,127 [INFO] date_of_birth: Year selected: 1984
+2020-10-02 23:53:41,186 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-02 23:53:41,230 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-02 23:53:41,294 [INFO] company_name: Company name is: Lucky Brand
+2020-10-02 23:53:42,618 [INFO] address: The following address info have been entered: 
+2020-10-02 23:53:42,618 [INFO] address: 123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-02 23:53:42,684 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-02 23:53:42,745 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-02 23:53:42,801 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-02 23:53:42,857 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-02 23:53:56,315 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
