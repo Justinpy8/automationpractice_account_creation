@@ -6,7 +6,7 @@ from os.path import abspath, dirname
 
 # to find the full location of your project in your system use this
 ROOT_DIR = dirname(dirname(abspath(__file__)))
-LOG = object
+
 
 # ******************************System tools*********************************
 def get_str_day():
