@@ -43,12 +43,16 @@ class AccountCreationPage(BasePage):
         self.driver.find_element_by_xpath("//button[@id='SubmitCreate']").click()
         time.sleep(2)
         logs.info(f"{email} is being entered as User Name")
-        # """Email address not available error"""
-        # email_unavailable_error = self.driver.find_element_by_xpath("//div[@id='create_account_error']")
-        # if email_unavailable_error.is_displayed():
-        #     logs.error("This email address already has an account")
-        #     self.screen_shots("unavailable email address")
-        #     logs.info("Screen shot of the error message has been saved")
+
+        try:
+            """Email address not available error"""
+            email_unavailable_error = self.driver.find_element_by_xpath("//div[@id='create_account_error']")
+            if email_unavailable_error.is_displayed():
+                logs.error("This email address already exist")
+                self.screen_shots("unavailable email address")
+                logs.info("Screen shot of the error message has been saved")
+        except NoSuchElementException as err:
+            pass
 
     def title_info(self, title):
         """Title"""
