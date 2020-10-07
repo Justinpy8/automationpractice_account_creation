@@ -35,3 +35,72 @@ Not sure what to put in here
 2020-10-06 00:22:02,007 [INFO] driver: Current name: chrome
 2020-10-06 00:22:04,100 [INFO] driver: browser is closed
 2020-10-06 00:22:04,100 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-06 00:23:33,805 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-06 00:23:38,927 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-06 00:23:38,927 [INFO] test_listing_creation_case1: Starting listing creation positive case test #1!
+2020-10-06 00:23:40,245 [INFO] launching_website: https://www.facebook.com/marketplace/ is loading
+2020-10-06 00:23:40,578 [INFO] sign_in: Email is being entered as the user name
+2020-10-06 00:23:41,676 [INFO] sign_in: Password is entered
+2020-10-06 00:23:47,727 [INFO] create_new_listing: Click on the 'Create New Listing' button.
+2020-10-06 00:23:49,792 [INFO] item_for_sale: Choosing the 'Item for Sale' option.
+2020-10-06 00:23:52,886 [INFO] upload_photos: Photo file is uploaded.
+2020-10-06 00:23:53,524 [INFO] title_box: Entered Broken old computer mouse to the title box
+2020-10-06 00:23:53,703 [INFO] price_box: Entered 100 to the price box
+2020-10-06 00:23:54,830 [INFO] category_list: Bringing up the the main category dropdown menu
+2020-10-06 00:23:56,877 [INFO] maincat_electronics: Selected 'Electronics' from the category list
+2020-10-06 00:23:57,923 [INFO] subcat1_computer: Selected 'Computers, Laptops & Tablets' from the subcategory list.
+2020-10-06 00:23:58,974 [INFO] subcat2_accessories: Selected 'Computer Peripherals & Accessories' from the subcategory list
+2020-10-06 00:24:00,026 [INFO] subcat3_mice: Selected 'Mice, Trackballs & Touchpads' from the subcategory list
+2020-10-06 00:24:00,309 [INFO] condition_list: Condition: New
+2020-10-06 00:24:00,465 [INFO] next_button: Click on the next button
+2020-10-06 00:24:06,098 [INFO] location_box: Selected location by ZipCode: 11205
+2020-10-06 00:24:06,198 [INFO] publish_button: Listing has been published
+2020-10-06 00:24:26,202 [INFO] listing_verification_url: The URL matches, listing is successfully executed!!
+2020-10-06 00:24:36,224 [INFO] listing_verification_title: Active listing item title is verified
+2020-10-06 00:24:44,387 [INFO] remove_listing: Listing has been removed!
+2020-10-06 00:25:04,425 [INFO] removal_verification_title: Listing removal was a success!
+2020-10-06 00:25:04,425 [INFO] removal_verification_title: Listing item xpath no longer being found with the following error message:
+2020-10-06 00:25:04,426 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-06 00:25:04,430 [INFO] driver: Current url: https://www.facebook.com/marketplace/you/selling
+2020-10-06 00:25:04,433 [INFO] driver: Current title:  (20+) Facebook
+2020-10-06 00:25:04,434 [INFO] driver: Current win_handle:  CDwindow-760E6FE9C33BD3E3CE028075B21D9D2F
+2020-10-06 00:25:04,434 [INFO] driver: Current name: chrome
+2020-10-06 00:25:06,603 [INFO] driver: browser is closed
+2020-10-06 00:25:06,603 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-06 22:54:48,043 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-06 22:54:53,201 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-06 22:54:53,201 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-06 22:54:55,059 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-06 22:55:00,962 [INFO] email_address_check: id@testaccount33.com is being entered as User Name
+2020-10-06 22:55:21,049 [INFO] title_info: Title has been selected
+2020-10-06 22:55:21,115 [INFO] name_info: Entering Justin as the first name.
+2020-10-06 22:55:21,166 [INFO] name_info: Entering Hello as the first name.
+2020-10-06 22:55:21,217 [INFO] password_info: Entering 123123 as the password.
+2020-10-06 22:55:21,278 [INFO] date_of_birth: Date selected: 3
+2020-10-06 22:55:42,354 [INFO] date_of_birth: Month Selected: June
+2020-10-06 22:55:43,403 [INFO] date_of_birth: Year selected: 1988
+2020-10-06 22:55:44,450 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-06 22:55:44,493 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-06 22:55:44,554 [INFO] company_name: Company name is: Lucky Brand
+2020-10-06 22:55:45,857 [INFO] address: The following address info have been entered: 
+2020-10-06 22:55:45,857 [INFO] address: 
+123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-06 22:55:45,923 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-06 22:55:45,984 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-06 22:55:46,038 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-06 22:55:46,092 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-06 22:55:52,708 [INFO] register_button: Registering the account.........
+2020-10-06 22:55:52,728 [INFO] account_confirmation: Account creation is successful - the sign out button is displayed.
+2020-10-06 22:55:52,729 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-06 22:55:52,732 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=my-account
+2020-10-06 22:55:52,735 [INFO] driver: Current title:  My account - My Store
+2020-10-06 22:55:52,736 [INFO] driver: Current win_handle:  CDwindow-837ECFFAAD46E2BAA3694D2542D95962
+2020-10-06 22:55:52,736 [INFO] driver: Current name: chrome
+2020-10-06 22:55:54,824 [INFO] driver: browser is closed
+2020-10-06 22:55:54,824 [INFO] driver: ********  TEARDOWN completed *************

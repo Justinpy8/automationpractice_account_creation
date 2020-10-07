@@ -8,32 +8,32 @@ logs = utils.create_logger()
 
 # Parameters:
 
-url = data["dataset1"]["url"]
-email = data["dataset1"]["email"]
-title = data["dataset1"]["title"]
-firstname = data["dataset1"]["firstname"]
-lastname = data["dataset1"]["lastname"]
-password = data["dataset1"]["password"]
-date = data["dataset1"]["date"]
-month = data["dataset1"]["month"]
-year = data["dataset1"]["year"]
-companyname = data["dataset1"]["companyname"]
-address_line1 = data["dataset1"]["address_line1"]
-address_line2 = data["dataset1"]["address_line2"]
-city = data["dataset1"]["city"]
-state = data["dataset1"]["state"]
-zipcode = data["dataset1"]["zipcode"]
-country = data["dataset1"]["country"]
-additionalinfo = data["dataset1"]["additionalinfo"]
-homephone = data["dataset1"]["homephone"]
-mobilephone = data["dataset1"]["mobilephone"]
-aliasaddress = data["dataset1"]["aliasaddress"]
+url = data["dataset3"]["url"]
+email = data["dataset3"]["email"]
+title = data["dataset3"]["title"]
+firstname = data["dataset3"]["firstname"]
+lastname = data["dataset3"]["lastname"]
+password = data["dataset3"]["password"]
+date = data["dataset3"]["date"]
+month = data["dataset3"]["month"]
+year = data["dataset3"]["year"]
+companyname = data["dataset3"]["companyname"]
+address_line1 = data["dataset3"]["address_line1"]
+address_line2 = data["dataset3"]["address_line2"]
+city = data["dataset3"]["city"]
+state = data["dataset3"]["state"]
+zipcode = data["dataset3"]["zipcode"]
+country = data["dataset3"]["country"]
+additionalinfo = data["dataset3"]["additionalinfo"]
+homephone = data["dataset3"]["homephone"]
+mobilephone = data["dataset3"]["mobilephone"]
+aliasaddress = data["dataset3"]["aliasaddress"]
 
 
 @pytest.mark.positive
 @pytest.mark.account_creation
 @pytest.mark.account_creation_positive
-def test_account_creation_case1(driver):
+def test_account_creation_case3(driver):
     logs.info("Starting account creation positive case #1 test!")
     account_creation = AccountCreationPage(driver)
     account_creation.launching_website(url)

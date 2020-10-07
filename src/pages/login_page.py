@@ -195,3 +195,8 @@ class AccountCreationPage(BasePage):
 
         except NoSuchElementException as err:
             logs.warning(err)
+
+    def signout(self):
+        logout = self.driver.find_element_by_xpath("//a[@class='logout']")
+        logout.click()
+        time.sleep(2)
