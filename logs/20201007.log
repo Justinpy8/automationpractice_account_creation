@@ -35,3 +35,92 @@ Not sure what to put in here
 2020-10-07 00:12:21,112 [INFO] driver: Current name: chrome
 2020-10-07 00:12:23,207 [INFO] driver: browser is closed
 2020-10-07 00:12:23,207 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-07 22:01:49,483 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-07 22:02:22,240 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-07 22:02:27,364 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-07 22:02:27,365 [INFO] test_account_creation_case3: Starting account creation positive case #1 test!
+2020-10-07 22:02:30,591 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-07 22:02:35,635 [INFO] email_address_check: id@testaccount39.com is being entered as User Name
+2020-10-07 22:02:55,697 [INFO] title_info: Title has been selected
+2020-10-07 22:02:55,755 [INFO] name_info: Entering Hello as the first name.
+2020-10-07 22:02:55,811 [INFO] name_info: Entering World as the first name.
+2020-10-07 22:02:55,863 [INFO] password_info: Entering 123123 as the password.
+2020-10-07 22:02:55,922 [INFO] date_of_birth: Date selected: 3
+2020-10-07 22:03:17,018 [INFO] date_of_birth: Month Selected: June
+2020-10-07 22:03:18,073 [INFO] date_of_birth: Year selected: 1988
+2020-10-07 22:03:19,113 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-07 22:03:19,160 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-07 22:03:19,223 [INFO] company_name: Company name is: Lucky Brand
+2020-10-07 22:03:20,521 [INFO] address: The following address info have been entered: 
+2020-10-07 22:03:20,521 [INFO] address: 
+123 Batman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-07 22:03:20,586 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-07 22:03:20,645 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-07 22:03:20,701 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-07 22:03:20,755 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-07 22:03:27,217 [INFO] register_button: Registering the account.........
+2020-10-07 22:03:27,237 [INFO] account_confirmation: Account creation is successful - the sign out button is displayed.
+2020-10-07 22:03:30,656 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-07 22:03:30,660 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+2020-10-07 22:03:30,663 [INFO] driver: Current title:  Login - My Store
+2020-10-07 22:03:30,664 [INFO] driver: Current win_handle:  CDwindow-8DFEE89A2ADAD678FFF384055DF530F7
+2020-10-07 22:03:30,664 [INFO] driver: Current name: chrome
+2020-10-07 22:03:32,758 [INFO] driver: browser is closed
+2020-10-07 22:03:32,758 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-07 22:05:18,089 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-07 22:05:23,211 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-07 22:05:23,212 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-07 22:05:26,034 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-07 22:05:31,136 [INFO] email_address_check: id@testaccount9.com is being entered as User Name
+2020-10-07 22:05:31,155 [ERROR] email_address_check: This email address already exist
+2020-10-07 22:05:31,474 [INFO] email_address_check: Screen shot of the error message has been saved
+2020-10-07 22:05:51,699 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-07 22:05:51,702 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+2020-10-07 22:05:51,706 [INFO] driver: Current title:  Login - My Store
+2020-10-07 22:05:51,707 [INFO] driver: Current win_handle:  CDwindow-72FBD2946509F3E0E3519E5A852B62ED
+2020-10-07 22:05:51,707 [INFO] driver: Current name: chrome
+2020-10-07 22:05:53,792 [INFO] driver: browser is closed
+2020-10-07 22:05:53,792 [INFO] driver: ********  TEARDOWN completed *************
+2020-10-07 22:06:03,286 [INFO] driver: ********** This is the SETUP fixture to run before your scope of your fixture **********
+2020-10-07 22:06:08,410 [INFO] driver: ********** SETUP fixture completed **********
+2020-10-07 22:06:08,411 [INFO] test_account_creation_case1: Starting account creation positive case #1 test!
+2020-10-07 22:06:11,503 [INFO] launching_website: http://automationpractice.com/ is loading
+2020-10-07 22:06:16,836 [INFO] email_address_check: id@testaccount339.com is being entered as User Name
+2020-10-07 22:06:36,935 [INFO] title_info: Title has been selected
+2020-10-07 22:06:36,993 [INFO] name_info: Entering Hello as the first name.
+2020-10-07 22:06:37,049 [INFO] name_info: Entering World as the first name.
+2020-10-07 22:06:37,100 [INFO] password_info: Entering 123123 as the password.
+2020-10-07 22:06:37,161 [INFO] date_of_birth: Date selected: 3
+2020-10-07 22:06:58,272 [INFO] date_of_birth: Month Selected: June
+2020-10-07 22:06:59,324 [INFO] date_of_birth: Year selected: 1988
+2020-10-07 22:07:00,367 [INFO] special_offers: Receive special offers from our partners box is checked
+2020-10-07 22:07:00,411 [INFO] news_letter: Sign up for our newsletter box is checked
+2020-10-07 22:07:00,473 [INFO] company_name: Company name is: Lucky Brand
+2020-10-07 22:07:01,777 [INFO] address: The following address info have been entered: 
+2020-10-07 22:07:01,777 [INFO] address: 
+123 Superman Ave
+1st Floor
+Brooklyn
+New York
+12345
+United States
+2020-10-07 22:07:01,841 [INFO] additional_info: The following additional info has been appended:
+Not sure what to put in here
+2020-10-07 22:07:01,901 [INFO] home_phone: Home phone number is: 123-123-7899 
+2020-10-07 22:07:01,956 [INFO] mobile_phone: Mobile phone number is: 258-369-8888
+2020-10-07 22:07:02,012 [INFO] address_alias: 123 sweet st is being entered as the alias address
+2020-10-07 22:07:08,614 [INFO] register_button: Registering the account.........
+2020-10-07 22:07:08,634 [INFO] account_confirmation: Account creation is successful - the sign out button is displayed.
+2020-10-07 22:07:13,118 [INFO] driver: ******** This is the TEARDOWN steps after each of your scope *************
+2020-10-07 22:07:13,121 [INFO] driver: Current url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+2020-10-07 22:07:13,124 [INFO] driver: Current title:  Login - My Store
+2020-10-07 22:07:13,125 [INFO] driver: Current win_handle:  CDwindow-86E45B3658652C1C86E615729C96D518
+2020-10-07 22:07:13,125 [INFO] driver: Current name: chrome
+2020-10-07 22:07:15,206 [INFO] driver: browser is closed
+2020-10-07 22:07:15,206 [INFO] driver: ********  TEARDOWN completed *************

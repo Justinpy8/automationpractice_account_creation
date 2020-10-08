@@ -199,4 +199,6 @@ class AccountCreationPage(BasePage):
     def signout(self):
         logout = self.driver.find_element_by_xpath("//a[@class='logout']")
         logout.click()
+        print("Signing out now........")
         time.sleep(2)
+
